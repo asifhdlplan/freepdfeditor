@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease;
+}
+
+/* MAIN CARD */
+.container {
+  margin: 30px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+
+  box-shadow: 0 0 30px rgba(0,255,255,0.2);
+
+  animation: slideUp 1s ease;
+}
+
+/* UPLOAD BOX */
+.upload-box {
+  border: 2px dashed #00ffff;
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  background: rgba(0,255,255,0.1);
+}
+
+/* CANVAS */
+canvas {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* TOOLS */
+.tools {
+  margin-top: 20px;
+}
+
+input {
+  padding: 12px;
+  width: 70%;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  padding: 12px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #00ffff;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00cccc;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.socials a {
+  margin: 10px;
+  font-size: 24px;
+  color: white;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #00ffff;
+  transform: scale(1.2);
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {transform: translateY(50px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
